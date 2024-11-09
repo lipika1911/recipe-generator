@@ -1,4 +1,4 @@
-streamlit
-pillow
-opencv-python==4.5.5.64
-inference-sdk
+streamlit==1.40.0
+pillow==11.0.0
+opencv-python>=4.8.0.0
+inference-sdk==0.9.17
