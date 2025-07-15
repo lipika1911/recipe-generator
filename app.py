@@ -3,57 +3,47 @@ from inference_sdk import InferenceHTTPClient
 from PIL import Image
 import json
 
-# Initialize the InferenceHTTPClient with the correct model endpoint
+# ✅ Correct API URL for hosted model inference
 client = InferenceHTTPClient(
-    api_url="https://serverless.roboflow.com",
+    api_url="https://detect.roboflow.com",
     api_key="wRYqcYsBKcNci74NV5KP"
 )
 
-# Load recipes database
-with open("recipes_db.json", "r") as file:
-    recipes = json.load(file)
+with open("recipes_db.json") as f:
+    recipes = json.load(f)
 
-def generate_recipe(detected_ingredients):
-    unique_ingredients = list(set(detected_ingredients))
-    matching_recipes = []
+def generate_recipe(detected):
+    unique = list(set(detected))
+    matches = []
     for recipe, details in recipes.items():
-        if any(ingredient in unique_ingredients for ingredient in details["ingredients"]):
-            matching_recipes.append(recipe)
-    return matching_recipes, unique_ingredients
+        if any(ingredient in unique for ingredient in details["ingredients"]):
+            matches.append(recipe)
+    return matches, unique
 
-st.title("AI Recipe Generator from Image 🍽️")
-st.write("Upload an image and get recipes based on detected ingredients!")
+st.title("Recipe Generator 🍲")
+uploaded = st.file_uploader("Upload food image", type=["jpg", "jpeg", "png"])
 
-image = st.file_uploader("Upload your food image", type=["jpg", "jpeg", "png"])
-
-if image:
-    img = Image.open(image)
+if uploaded:
+    img = Image.open(uploaded)
     st.image(img, caption="Uploaded Image", use_column_width=True)
 
-    img_path = "uploaded_image.jpg"
-    img.save(img_path)
+    path = "uploaded.jpg"
+    img.save(path)
 
-    # ✅ Use correct model ID from your reference
-    result = client.infer(img_path, model_id="ingredient-detection-2-kgs04/1")
+    result = client.infer(path, model_id="ingredient-detection-2-kgs04/1")
 
-    # Extract detected classes
-    detected_classes = [prediction["class"] for prediction in result["predictions"]]
-    st.write("Detected Ingredients:", detected_classes)
+    detected = [p["class"] for p in result["predictions"]]
+    st.write("Detected Ingredients:", detected)
 
-    recipes_found, unique_ingredients = generate_recipe(detected_classes)
+    found, unique = generate_recipe(detected)
 
-    if recipes_found:
-        st.success(f"Found {len(recipes_found)} recipe(s)!")
-        selected_recipe = st.selectbox("Choose a recipe", recipes_found)
-
-        if selected_recipe:
-            recipe_details = recipes[selected_recipe]
-            st.subheader(selected_recipe)
-            st.markdown("**Ingredients:**")
-            for ingredient in recipe_details["ingredients"]:
-                st.write(f"- {ingredient}")
-            st.markdown("**Steps:**")
-            for step in recipe_details["steps"]:
-                st.write(f"- {step}")
+    if found:
+        st.success(f"{len(found)} recipes found!")
+        choice = st.selectbox("Choose one", found)
+        if choice:
+            st.subheader(choice)
+            st.write("Ingredients:", *recipes[choice]["ingredients"])
+            st.write("Steps:", *recipes[choice]["steps"])
     else:
-        st.error("No matching recipes found for detected ingredients.")
+        st.error("No recipes matched these ingredients.")
+
