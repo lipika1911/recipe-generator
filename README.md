@@ -24,6 +24,8 @@ An AI-powered web app that generates recipe suggestions from a single food image
 - 🔍 **Ingredient Detection**: Upload a food image and instantly get a list of detected ingredients using a YOLOv8 object detection model.
 
 - 🍽️ **Recipe Recommendations**: Get personalized recipe suggestions based on the ingredients detected.
+  
+- 🥕 **Works with Common Ingredients**: Carrot, cauliflower, eggs, garlic, ginger, onion, tomato, potato.
 
 - 🖼️ **Interactive UI**: Simple and clean interface built with Streamlit.
 
