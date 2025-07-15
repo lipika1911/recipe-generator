@@ -1,174 +1,224 @@
 {
-    "Simple Tomato Omelette": {
-        "ingredients": ["egg", "tomato", "onion", "salt", "green chili"],
+    "Carrot Cauliflower Masala": {
+        "ingredients": ["carrot", "cauliflower", "onion", "tomato", "garlic", "ginger", "potato", "salt", "turmeric powder"],
         "steps": [
-            "Crack eggs in a bowl, add chopped tomato, onion, and green chili.",
-            "Whisk well with salt.",
-            "Pour into a hot greased pan and cook until set.",
-            "Serve hot with toast."
+            "Chop all vegetables into bite-sized pieces.",
+            "Sauté onion, garlic, and ginger until golden.",
+            "Add tomato and cook until mushy.",
+            "Add carrot, cauliflower, and potato with salt and turmeric.",
+            "Cook covered until veggies are tender."
         ]
     },
-    "Spicy Onion Potato Fry": {
-        "ingredients": ["potato", "onion", "red chilly powder", "turmeric powder", "salt"],
+    "Spicy Aloo Gobhi": {
+        "ingredients": ["potato", "cauliflower", "onion", "tomato", "garlic", "ginger", "salt", "red chilly powder"],
         "steps": [
-            "Peel and cube potatoes, slice onions.",
-            "Heat oil, sauté onions until golden.",
-            "Add potatoes, turmeric, red chili powder, and salt.",
-            "Cook on medium heat until crispy."
+            "Cut potato and cauliflower into medium chunks.",
+            "Fry onions, garlic, and ginger until brown.",
+            "Add tomatoes and spices, cook until soft.",
+            "Add potato and cauliflower, cook covered until done."
         ]
     },
-    "Tomato Onion Curry": {
-        "ingredients": ["tomato", "onion", "turmeric powder", "garlic", "salt"],
+    "Carrot Tomato Soup": {
+        "ingredients": ["carrot", "tomato", "onion", "garlic", "salt", "ginger"],
         "steps": [
-            "Chop onions, tomatoes, and garlic.",
-            "Heat oil, sauté garlic and onion until soft.",
-            "Add tomatoes, turmeric, and salt.",
-            "Cook until the curry thickens."
-        ]
-    },
-    "Egg Tomato Bhurji": {
-        "ingredients": ["egg", "tomato", "onion", "green chili", "salt"],
-        "steps": [
-            "Chop onion, tomato, and green chili.",
-            "Heat oil, sauté onions, then tomatoes until soft.",
-            "Add beaten eggs, scramble until cooked.",
-            "Serve hot."
-        ]
-    },
-    "Potato Masala": {
-        "ingredients": ["potato", "onion", "turmeric powder", "red chilly powder", "salt"],
-        "steps": [
-            "Boil, peel, and cube potatoes.",
-            "Heat oil, sauté onions until golden.",
-            "Add potatoes, turmeric, red chili powder, and salt.",
-            "Mix well and cook for 5 mins."
-        ]
-    },
-    "Onion Tomato Dal": {
-        "ingredients": ["yellow dal", "onion", "tomato", "turmeric powder", "garlic"],
-        "steps": [
-            "Boil yellow dal with turmeric and salt.",
-            "In another pan, sauté garlic, onions, and tomatoes.",
-            "Mix with dal and simmer for 5 minutes.",
-            "Serve hot with rice."
-        ]
-    },
-    "Egg Potato Curry": {
-        "ingredients": ["egg", "potato", "onion", "tomato", "garlic"],
-        "steps": [
-            "Boil and peel eggs and potatoes.",
-            "Sauté onions, garlic, and tomatoes with spices.",
-            "Add eggs and potatoes, simmer for 10 mins.",
-            "Serve with roti or rice."
-        ]
-    },
-    "Tomato Onion Rice": {
-        "ingredients": ["rice", "tomato", "onion", "garlic", "turmeric powder"],
-        "steps": [
-            "Cook rice separately.",
-            "Sauté onions, garlic, and tomatoes with turmeric.",
-            "Mix cooked rice and stir fry for 5 mins.",
-            "Serve hot."
-        ]
-    },
-    "Crispy Onion Rings": {
-        "ingredients": ["onion", "egg", "flour", "salt", "red chilly powder"],
-        "steps": [
-            "Slice onions into rings.",
-            "Prepare a batter with egg, flour, salt, and chili powder.",
-            "Dip onions, deep fry until crispy.",
-            "Serve with ketchup."
-        ]
-    },
-    "Tomato Egg Curry": {
-        "ingredients": ["egg", "tomato", "onion", "garlic", "turmeric powder"],
-        "steps": [
-            "Boil and peel eggs.",
-            "Sauté garlic, onions, and tomatoes with turmeric.",
-            "Add eggs, cook for 10 mins.",
-            "Serve hot with rice."
-        ]
-    },
-    "Spicy Potato Wedges": {
-        "ingredients": ["potato", "red chilly powder", "garlic", "salt"],
-        "steps": [
-            "Cut potatoes into wedges.",
-            "Toss with chili powder, garlic paste, and salt.",
-            "Bake or fry until golden."
-        ]
-    },
-    "Egg Fried Rice": {
-        "ingredients": ["egg", "onion", "green peas", "garlic", "rice"],
-        "steps": [
-            "Cook rice separately.",
-            "Sauté onions, garlic, and peas, add beaten egg and scramble.",
-            "Mix rice and stir-fry for 5 mins.",
-            "Serve hot."
-        ]
-    },
-    "Onion Egg Stir Fry": {
-        "ingredients": ["egg", "onion", "garlic", "salt", "green chili"],
-        "steps": [
-            "Chop onions, garlic, and green chili.",
-            "Sauté onion and garlic until golden.",
-            "Add beaten eggs, scramble and serve."
-        ]
-    },
-    "Masala Tomato Toast": {
-        "ingredients": ["tomato", "onion", "egg", "bread", "salt"],
-        "steps": [
-            "Mix chopped onion, tomato, egg, and salt.",
-            "Spread on bread slices.",
-            "Toast on a tawa until golden and serve."
-        ]
-    },
-    "Potato Egg Bhurji": {
-        "ingredients": ["potato", "egg", "onion", "garlic", "red chilly powder"],
-        "steps": [
-            "Boil and mash potatoes.",
-            "Sauté onion and garlic, add beaten eggs, scramble.",
-            "Mix potatoes and spices, cook for 5 mins.",
-            "Serve hot."
-        ]
-    },
-    "Tomato Onion Omelette": {
-        "ingredients": ["egg", "tomato", "onion", "salt", "turmeric powder"],
-        "steps": [
-            "Chop onion and tomato finely.",
-            "Mix with egg, salt, and turmeric.",
-            "Cook as omelette in hot pan."
-        ]
-    },
-    "Quick Potato Chips": {
-        "ingredients": ["potato", "salt", "red chilly powder"],
-        "steps": [
-            "Thinly slice potatoes.",
-            "Deep fry until golden, toss with salt and chili powder.",
-            "Serve as snack."
-        ]
-    },
-    "Tomato Garlic Soup": {
-        "ingredients": ["tomato", "garlic", "onion", "salt", "butter"],
-        "steps": [
-            "Sauté garlic, onion, and tomato in butter.",
-            "Add water, boil and blend.",
+            "Chop carrots, tomatoes, and onions.",
+            "Sauté garlic and onion, then add carrots and tomatoes.",
+            "Add water, cook until soft, blend until smooth.",
             "Season and serve hot."
         ]
     },
-    "Egg Onion Masala": {
-        "ingredients": ["egg", "onion", "green chili", "turmeric powder", "salt"],
+    "Mixed Veg Stir Fry": {
+        "ingredients": ["carrot", "cauliflower", "potato", "onion", "tomato", "garlic", "ginger", "salt"],
         "steps": [
-            "Boil eggs, chop onions and chilies.",
-            "Sauté onions and chilies, add eggs and spices.",
-            "Cook for 5 mins, serve hot."
+            "Chop all veggies into similar-sized pieces.",
+            "Stir fry onion, garlic, and ginger.",
+            "Add veggies and salt, cook on high flame till slightly crispy."
         ]
     },
-    "Potato Onion Pakora": {
-        "ingredients": ["potato", "onion", "gram flour", "red chilly powder", "salt"],
+    "Ginger Garlic Masala Vegetables": {
+        "ingredients": ["carrot", "cauliflower", "potato", "onion", "tomato", "garlic", "ginger", "salt"],
         "steps": [
-            "Slice potatoes and onions thinly.",
-            "Prepare batter with gram flour, salt, and chili powder.",
-            "Dip and deep fry until crispy."
+            "Prepare ginger-garlic paste, sauté until fragrant.",
+            "Add onion and tomato, cook until soft.",
+            "Add veggies and cook until tender, serve hot."
+        ]
+    },
+    "Carrot Cauliflower Rice": {
+        "ingredients": ["carrot", "cauliflower", "onion", "garlic", "ginger", "tomato", "salt", "rice"],
+        "steps": [
+            "Chop veggies finely.",
+            "Sauté onion, garlic, and ginger, add tomato.",
+            "Add veggies, stir fry with cooked rice, serve hot."
+        ]
+    },
+    "Carrot Potato Cutlet": {
+        "ingredients": ["carrot", "potato", "onion", "garlic", "ginger", "salt", "bread crumbs"],
+        "steps": [
+            "Boil and mash potato and carrot.",
+            "Add sautéed onion, garlic, ginger, and salt.",
+            "Form patties, coat with bread crumbs, shallow fry until golden."
+        ]
+    },
+    "Veggie Stuffed Paratha": {
+        "ingredients": ["carrot", "potato", "onion", "garlic", "ginger", "salt", "wheat flour"],
+        "steps": [
+            "Grate carrot, mash potato, and chop onion.",
+            "Mix with spices, stuff into dough, roll, and cook on tawa until golden."
+        ]
+    },
+    "Tomato Onion Gravy Veggies": {
+        "ingredients": ["carrot", "cauliflower", "potato", "onion", "tomato", "garlic", "ginger", "salt"],
+        "steps": [
+            "Make a thick tomato-onion gravy with garlic and ginger.",
+            "Add veggies, cook till tender, serve with rice or roti."
+        ]
+    },
+    "Gobi Masala Curry": {
+        "ingredients": ["cauliflower", "onion", "tomato", "garlic", "ginger", "salt", "potato"],
+        "steps": [
+            "Blanch cauliflower and potato.",
+            "Sauté onion, garlic, and ginger, add tomato.",
+            "Add veggies and cook in masala until done."
+        ]
+    },
+    "Carrot Cauliflower Fry": {
+        "ingredients": ["carrot", "cauliflower", "onion", "garlic", "salt", "red chilly powder"],
+        "steps": [
+            "Parboil veggies, sauté onions and garlic.",
+            "Add veggies, chili powder, and salt, stir-fry till crispy."
+        ]
+    },
+    "Tomato Ginger Rasam": {
+        "ingredients": ["tomato", "ginger", "garlic", "onion", "salt", "black pepper"],
+        "steps": [
+            "Sauté garlic, onion, ginger, and tomatoes.",
+            "Add water, boil, season with salt and pepper, serve hot."
+        ]
+    },
+    "Ginger Garlic Cauliflower": {
+        "ingredients": ["cauliflower", "garlic", "ginger", "onion", "tomato", "salt"],
+        "steps": [
+            "Chop cauliflower into florets, boil lightly.",
+            "Sauté onion, garlic, ginger, tomato, add florets and cook till crispy."
+        ]
+    },
+    "Carrot Onion Bhaji": {
+        "ingredients": ["carrot", "onion", "gram flour", "salt", "garlic"],
+        "steps": [
+            "Grate carrot, slice onion, mix with gram flour, salt, and garlic paste.",
+            "Deep fry spoonfuls till golden, serve hot."
+        ]
+    },
+    "Spicy Veg Pulao": {
+        "ingredients": ["carrot", "cauliflower", "potato", "onion", "garlic", "ginger", "tomato", "salt", "rice"],
+        "steps": [
+            "Sauté onion, garlic, ginger, tomato, add chopped veggies.",
+            "Add rice, water, and cook till fluffy."
+        ]
+    },
+    "Veggie Garlic Noodles": {
+        "ingredients": ["carrot", "onion", "garlic", "ginger", "tomato", "cauliflower", "noodles", "salt"],
+        "steps": [
+            "Boil noodles, sauté veggies with garlic and ginger.",
+            "Toss noodles with sautéed veggies, serve hot."
+        ]
+    },
+    "Cauliflower Tomato Curry": {
+        "ingredients": ["cauliflower", "onion", "tomato", "garlic", "ginger", "salt"],
+        "steps": [
+            "Make tomato-onion masala, add cauliflower, cook till soft, serve."
+        ]
+    },
+    "Potato Garlic Tawa Fry": {
+        "ingredients": ["potato", "garlic", "onion", "salt", "red chilly powder"],
+        "steps": [
+            "Slice potatoes, sauté with garlic, onion, and chili powder until crispy."
+        ]
+    },
+    "Cauliflower Potato Curry": {
+        "ingredients": ["cauliflower", "potato", "onion", "garlic", "ginger", "tomato", "salt"],
+        "steps": [
+            "Make onion-tomato base, add boiled veggies, simmer for 10 minutes."
+        ]
+    },
+    "Mixed Veg Handi": {
+        "ingredients": ["carrot", "cauliflower", "potato", "onion", "tomato", "garlic", "ginger", "salt"],
+        "steps": [
+            "Sauté onion, garlic, ginger, and tomato in handi.",
+            "Add all veggies, slow cook with lid on, serve hot."
+        ]
+    },
+    "Garlic Ginger Masala Rice": {
+        "ingredients": ["garlic", "ginger", "onion", "tomato", "carrot", "potato", "salt", "rice"],
+        "steps": [
+            "Cook rice separately, prepare garlic-ginger masala.",
+            "Mix rice with veggies and serve hot."
+        ]
+    },
+    "Carrot Cauliflower Paratha": {
+        "ingredients": ["carrot", "cauliflower", "onion", "garlic", "salt", "wheat flour"],
+        "steps": [
+            "Grate carrot and cauliflower, mix with onion, garlic, and spices.",
+            "Stuff into dough, roll and cook paratha."
+        ]
+    },
+   "Potato Onion Dry Fry": {
+        "ingredients": ["potato", "onion", "garlic", "ginger", "salt", "turmeric powder"],
+        "steps": [
+            "Peel and chop potatoes into cubes, slice onions, and finely chop garlic and ginger.",
+            "Heat oil in a pan, sauté garlic and ginger until golden, then add onions and cook until soft.",
+            "Add turmeric powder, salt, and potatoes; mix well, cover, and cook on low flame until potatoes are soft, stirring occasionally.",
+            "Remove the lid, cook on medium flame, stirring until potatoes are golden and crispy, then serve hot."
+        ]
+    },
+    "Spicy Cauliflower Rice": {
+        "ingredients": ["cauliflower", "onion", "tomato", "garlic", "ginger", "salt", "rice"],
+        "steps": [
+            "Sauté spices with onion, garlic, ginger, and tomato.",
+            "Mix cooked rice and cauliflower, cook for 5 mins."
+        ]
+    },
+    "Carrot Tomato Chutney": {
+        "ingredients": ["carrot", "tomato", "garlic", "ginger", "salt"],
+        "steps": [
+            "Peel and chop carrots, tomatoes, garlic, and ginger into small pieces.",
+            "Heat oil in a pan, sauté garlic and ginger for a minute, then add carrots and tomatoes, cook until they turn soft.",
+            "Add salt and let the mixture cool slightly, then transfer everything to a blender and grind into a smooth chutney.",
+            "Serve fresh with dosa, idli, or rice; optional tempering with mustard seeds and curry leaves can be added for extra flavor."
+        ]
+    },
+    "Onion Tomato Mixed Veg Curry": {
+        "ingredients": ["carrot", "cauliflower", "potato", "onion", "tomato", "garlic", "ginger", "salt"],
+        "steps": [
+            "Prepare masala base", 
+            "Add chopped veggies",
+            "cook until soft, serve hot."
+        ]
+    },
+    "Simple Masala Cauliflower": {
+        "ingredients": ["cauliflower", "onion", "garlic", "ginger", "salt", "tomato"],
+        "steps": [
+            "Cook onion, garlic, ginger, and tomato till mushy",
+            "Add cauliflower", 
+            "cook till done."
+        ]
+    },
+    "Carrot Ginger Pickle": {
+        "ingredients": ["carrot", "ginger", "garlic", "salt", "mustard seeds"],
+        "steps": [
+            "Julienne carrot and ginger",
+            "mix with garlic, mustard, salt, and oil", 
+            "keep for 1 day before serving."
+        ]
+    },
+    "Tawa Veg Curry": {
+        "ingredients": ["carrot", "cauliflower", "potato", "onion", "tomato", "garlic", "ginger", "salt"],
+        "steps": [
+            "Peel and chop carrot and potato into small cubes, cut cauliflower into florets, and finely chop onion, tomato, garlic, and ginger.",
+            "Boil the chopped carrot, potato, and cauliflower in salted water until 70% cooked, then drain and set aside.",
+            "Heat oil on a flat tawa or wide pan, add garlic, ginger, and onion, sauté until onions are golden brown, then add tomatoes and cook until soft and mushy forming a gravy base.",
+            "Add the boiled vegetables, sprinkle salt, and cook on medium flame, stirring occasionally until vegetables are nicely roasted and slightly crispy; serve hot with roti or paratha."
         ]
     }
 }
+
