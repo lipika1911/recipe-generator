@@ -3,17 +3,16 @@ from inference_sdk import InferenceHTTPClient
 from PIL import Image
 import json
 
-# Initialize the InferenceHTTPClient with Roboflow serverless endpoint
+# Initialize the InferenceHTTPClient with the correct model endpoint
 client = InferenceHTTPClient(
     api_url="https://serverless.roboflow.com",
     api_key="wRYqcYsBKcNci74NV5KP"
 )
 
-# Load your recipes database
+# Load recipes database
 with open("recipes_db.json", "r") as file:
     recipes = json.load(file)
 
-# Function to generate recipe based on detected ingredients
 def generate_recipe(detected_ingredients):
     unique_ingredients = list(set(detected_ingredients))
     matching_recipes = []
@@ -22,42 +21,29 @@ def generate_recipe(detected_ingredients):
             matching_recipes.append(recipe)
     return matching_recipes, unique_ingredients
 
-# Streamlit App
-st.title("AI Recipe Generator from Image 🍳")
-st.write("Upload a food image and get recipes based on detected ingredients!")
+st.title("AI Recipe Generator from Image 🍽️")
+st.write("Upload an image and get recipes based on detected ingredients!")
 
-image = st.file_uploader("Upload your image", type=["jpg", "jpeg", "png"])
+image = st.file_uploader("Upload your food image", type=["jpg", "jpeg", "png"])
 
 if image:
     img = Image.open(image)
     st.image(img, caption="Uploaded Image", use_column_width=True)
-    
-    # Save temporarily
+
     img_path = "uploaded_image.jpg"
     img.save(img_path)
 
-    # Run workflow detection using Roboflow
-    result = client.run_workflow(
-        workspace_name="lipika",
-        workflow_id="detect-and-classify",
-        images={"image": img_path},
-        use_cache=True
-    )
+    # ✅ Use correct model ID from your reference
+    result = client.infer(img_path, model_id="ingredient-detection-2-kgs04/1")
 
-    # Extract detected ingredients from result
-    detected_classes = []
-    for step in result["steps"]:
-        predictions = step.get("predictions", [])
-        for prediction in predictions:
-            detected_classes.append(prediction.get("class"))
-
+    # Extract detected classes
+    detected_classes = [prediction["class"] for prediction in result["predictions"]]
     st.write("Detected Ingredients:", detected_classes)
 
-    # Recipe generation
     recipes_found, unique_ingredients = generate_recipe(detected_classes)
 
     if recipes_found:
-        st.success(f"Found {len(recipes_found)} recipe(s) matching your ingredients!")
+        st.success(f"Found {len(recipes_found)} recipe(s)!")
         selected_recipe = st.selectbox("Choose a recipe", recipes_found)
 
         if selected_recipe:
