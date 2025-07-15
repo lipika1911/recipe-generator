@@ -1,312 +1,174 @@
 {
-    "Classic Omelette": {
-        "ingredients": [
-            "egg",
-            "butter",
-            "onion"
-        ],
+    "Simple Tomato Omelette": {
+        "ingredients": ["egg", "tomato", "onion", "salt", "green chili"],
         "steps": [
-            "Crack the eggs into a bowl and whisk until smooth.",
-            "Heat butter in a pan over medium heat.",
-            "Add chopped onions and saut\u00e9 until soft.",
-            "Pour the eggs into the pan and cook until set.",
-            "Fold the omelette in half and serve."
+            "Crack eggs in a bowl, add chopped tomato, onion, and green chili.",
+            "Whisk well with salt.",
+            "Pour into a hot greased pan and cook until set.",
+            "Serve hot with toast."
         ]
     },
-    "Potato Gratin": {
-        "ingredients": [
-            "potato",
-            "butter",
-            "milk",
-            "onion"
-        ],
+    "Spicy Onion Potato Fry": {
+        "ingredients": ["potato", "onion", "red chilly powder", "turmeric powder", "salt"],
         "steps": [
-            "Preheat the oven to 375\u00b0F (190\u00b0C).",
-            "Thinly slice the potatoes and onions.",
-            "In a pan, melt butter and saut\u00e9 onions until translucent.",
-            "In a baking dish, layer the potatoes and onions, pouring milk over each layer.",
-            "Cover with foil and bake for 45 minutes, then remove foil and bake for an additional 15 minutes."
+            "Peel and cube potatoes, slice onions.",
+            "Heat oil, sauté onions until golden.",
+            "Add potatoes, turmeric, red chili powder, and salt.",
+            "Cook on medium heat until crispy."
         ]
     },
-    "Mashed Potatoes": {
-        "ingredients": [
-            "potato",
-            "butter",
-            "milk"
-        ],
+    "Tomato Onion Curry": {
+        "ingredients": ["tomato", "onion", "turmeric powder", "garlic", "salt"],
         "steps": [
-            "Peel and boil the potatoes until tender.",
-            "Drain the potatoes and mash them with butter and milk.",
-            "Season with salt and pepper, and serve."
+            "Chop onions, tomatoes, and garlic.",
+            "Heat oil, sauté garlic and onion until soft.",
+            "Add tomatoes, turmeric, and salt.",
+            "Cook until the curry thickens."
         ]
     },
-    "Potato Soup": {
-        "ingredients": [
-            "potato",
-            "onion",
-            "butter",
-            "milk"
-        ],
+    "Egg Tomato Bhurji": {
+        "ingredients": ["egg", "tomato", "onion", "green chili", "salt"],
         "steps": [
-            "Peel and chop the potatoes and onions.",
-            "In a pot, saut\u00e9 the onions in butter until soft.",
-            "Add the potatoes and cover with water. Bring to a boil and simmer until potatoes are soft.",
-            "Mash the potatoes in the pot and add milk to reach desired consistency.",
-            "Season with salt and pepper and serve."
+            "Chop onion, tomato, and green chili.",
+            "Heat oil, sauté onions, then tomatoes until soft.",
+            "Add beaten eggs, scramble until cooked.",
+            "Serve hot."
         ]
     },
-    "Egg Salad": {
-        "ingredients": [
-            "egg",
-            "onion",
-            "butter"
-        ],
+    "Potato Masala": {
+        "ingredients": ["potato", "onion", "turmeric powder", "red chilly powder", "salt"],
         "steps": [
-            "Boil the eggs and chop them into small pieces.",
-            "In a pan, saut\u00e9 onions in butter until soft.",
-            "Mix the eggs and onions in a bowl, adding salt and pepper to taste.",
-            "Serve on toast or as a side dish."
+            "Boil, peel, and cube potatoes.",
+            "Heat oil, sauté onions until golden.",
+            "Add potatoes, turmeric, red chili powder, and salt.",
+            "Mix well and cook for 5 mins."
         ]
     },
-    "French Toast": {
-        "ingredients": [
-            "egg",
-            "milk",
-            "butter"
-        ],
+    "Onion Tomato Dal": {
+        "ingredients": ["yellow dal", "onion", "tomato", "turmeric powder", "garlic"],
         "steps": [
-            "Whisk eggs and milk together in a bowl.",
-            "Dip slices of bread into the egg mixture, coating each side.",
-            "Cook the bread slices in a buttered pan until golden brown on both sides.",
-            "Serve with syrup or powdered sugar."
+            "Boil yellow dal with turmeric and salt.",
+            "In another pan, sauté garlic, onions, and tomatoes.",
+            "Mix with dal and simmer for 5 minutes.",
+            "Serve hot with rice."
         ]
     },
-    "Scalloped Potatoes": {
-        "ingredients": [
-            "potato",
-            "milk",
-            "butter",
-            "onion"
-        ],
+    "Egg Potato Curry": {
+        "ingredients": ["egg", "potato", "onion", "tomato", "garlic"],
         "steps": [
-            "Preheat the oven to 350\u00b0F (175\u00b0C).",
-            "Slice the potatoes thinly and chop the onions.",
-            "In a pan, saut\u00e9 onions in butter, then add milk and bring to a simmer.",
-            "Layer potatoes and onion mixture in a baking dish, then bake for 40 minutes."
+            "Boil and peel eggs and potatoes.",
+            "Sauté onions, garlic, and tomatoes with spices.",
+            "Add eggs and potatoes, simmer for 10 mins.",
+            "Serve with roti or rice."
         ]
     },
-    "Potato and Egg Breakfast Burrito": {
-        "ingredients": [
-            "potato",
-            "egg",
-            "onion",
-            "butter"
-        ],
+    "Tomato Onion Rice": {
+        "ingredients": ["rice", "tomato", "onion", "garlic", "turmeric powder"],
         "steps": [
-            "Saut\u00e9 diced onions and potatoes in butter until golden and tender.",
-            "Scramble eggs in a separate pan and mix with the potatoes and onions.",
-            "Wrap the mixture in a tortilla to form a burrito."
+            "Cook rice separately.",
+            "Sauté onions, garlic, and tomatoes with turmeric.",
+            "Mix cooked rice and stir fry for 5 mins.",
+            "Serve hot."
         ]
     },
-    "Potato Frittata": {
-        "ingredients": [
-            "potato",
-            "egg",
-            "onion",
-            "butter"
-        ],
+    "Crispy Onion Rings": {
+        "ingredients": ["onion", "egg", "flour", "salt", "red chilly powder"],
         "steps": [
-            "Saut\u00e9 onions and thinly sliced potatoes in butter until soft.",
-            "Whisk eggs and pour over the potatoes in the pan.",
-            "Cook until the eggs are set, then broil for 2 minutes to brown the top."
+            "Slice onions into rings.",
+            "Prepare a batter with egg, flour, salt, and chili powder.",
+            "Dip onions, deep fry until crispy.",
+            "Serve with ketchup."
         ]
     },
-    "Creamy Potato Salad": {
-        "ingredients": [
-            "potato",
-            "milk",
-            "butter",
-            "onion",
-            "egg"
-        ],
+    "Tomato Egg Curry": {
+        "ingredients": ["egg", "tomato", "onion", "garlic", "turmeric powder"],
         "steps": [
-            "Boil the potatoes until tender, then chop them into cubes.",
-            "Boil eggs, peel and chop them.",
-            "In a bowl, combine potatoes, eggs, and chopped onions.",
-            "In a separate bowl, mix butter and milk to create a creamy dressing, then mix with the potatoes."
+            "Boil and peel eggs.",
+            "Sauté garlic, onions, and tomatoes with turmeric.",
+            "Add eggs, cook for 10 mins.",
+            "Serve hot with rice."
         ]
     },
-    "Potato Pancakes": {
-        "ingredients": [
-            "potato",
-            "egg",
-            "onion",
-            "butter"
-        ],
+    "Spicy Potato Wedges": {
+        "ingredients": ["potato", "red chilly powder", "garlic", "salt"],
         "steps": [
-            "Grate the potatoes and squeeze out excess moisture.",
-            "Mix grated potatoes, egg, and chopped onions.",
-            "Fry spoonfuls of the mixture in butter until golden brown on both sides."
+            "Cut potatoes into wedges.",
+            "Toss with chili powder, garlic paste, and salt.",
+            "Bake or fry until golden."
         ]
     },
-    "Egg and Onion Stir Fry": {
-        "ingredients": [
-            "egg",
-            "onion",
-            "butter"
-        ],
+    "Egg Fried Rice": {
+        "ingredients": ["egg", "onion", "green peas", "garlic", "rice"],
         "steps": [
-            "Saut\u00e9 onions in butter until golden.",
-            "Scramble eggs in a separate pan and add them to the onions.",
-            "Stir fry until fully cooked and serve."
+            "Cook rice separately.",
+            "Sauté onions, garlic, and peas, add beaten egg and scramble.",
+            "Mix rice and stir-fry for 5 mins.",
+            "Serve hot."
         ]
     },
-    "Cheese and Potato Casserole": {
-        "ingredients": [
-            "potato",
-            "butter",
-            "milk",
-            "onion"
-        ],
+    "Onion Egg Stir Fry": {
+        "ingredients": ["egg", "onion", "garlic", "salt", "green chili"],
         "steps": [
-            "Preheat the oven to 375\u00b0F (190\u00b0C).",
-            "Saut\u00e9 onions in butter until soft, then add sliced potatoes.",
-            "Layer potatoes, onions, and cheese in a casserole dish, pour over milk.",
-            "Bake for 30 minutes or until golden brown."
+            "Chop onions, garlic, and green chili.",
+            "Sauté onion and garlic until golden.",
+            "Add beaten eggs, scramble and serve."
         ]
     },
-    "Onion Rings": {
-        "ingredients": [
-            "onion",
-            "butter"
-        ],
+    "Masala Tomato Toast": {
+        "ingredients": ["tomato", "onion", "egg", "bread", "salt"],
         "steps": [
-            "Slice onions into rings and dip in a batter of flour, milk, and seasonings.",
-            "Fry in butter until crispy and golden."
+            "Mix chopped onion, tomato, egg, and salt.",
+            "Spread on bread slices.",
+            "Toast on a tawa until golden and serve."
         ]
     },
-    "Egg and Potato Skillet": {
-        "ingredients": [
-            "egg",
-            "potato",
-            "butter",
-            "onion"
-        ],
+    "Potato Egg Bhurji": {
+        "ingredients": ["potato", "egg", "onion", "garlic", "red chilly powder"],
         "steps": [
-            "Cube potatoes and fry in butter until crispy.",
-            "Add diced onions and cook until soft.",
-            "Crack eggs into the skillet and cook until done to your liking."
+            "Boil and mash potatoes.",
+            "Sauté onion and garlic, add beaten eggs, scramble.",
+            "Mix potatoes and spices, cook for 5 mins.",
+            "Serve hot."
         ]
     },
-    "Creamy Potato and Onion Soup": {
-        "ingredients": [
-            "potato",
-            "onion",
-            "butter",
-            "milk"
-        ],
+    "Tomato Onion Omelette": {
+        "ingredients": ["egg", "tomato", "onion", "salt", "turmeric powder"],
         "steps": [
-            "Saut\u00e9 onions in butter until soft.",
-            "Add diced potatoes and cook until golden.",
-            "Add milk and simmer until the potatoes are tender.",
-            "Blend the soup until smooth and serve."
+            "Chop onion and tomato finely.",
+            "Mix with egg, salt, and turmeric.",
+            "Cook as omelette in hot pan."
         ]
     },
-    "Milk and Honey French Toast": {
-        "ingredients": [
-            "egg",
-            "milk",
-            "butter"
-        ],
+    "Quick Potato Chips": {
+        "ingredients": ["potato", "salt", "red chilly powder"],
         "steps": [
-            "Whisk eggs and milk together, adding a bit of honey.",
-            "Dip slices of bread in the mixture and cook in butter until golden.",
-            "Serve with syrup or powdered sugar."
+            "Thinly slice potatoes.",
+            "Deep fry until golden, toss with salt and chili powder.",
+            "Serve as snack."
         ]
     },
-    "Baked Potatoes with Butter and Onion": {
-        "ingredients": [
-            "potato",
-            "butter",
-            "onion"
-        ],
+    "Tomato Garlic Soup": {
+        "ingredients": ["tomato", "garlic", "onion", "salt", "butter"],
         "steps": [
-            "Pierce the potatoes with a fork and bake in the oven until tender.",
-            "Top with butter and saut\u00e9ed onions before serving."
+            "Sauté garlic, onion, and tomato in butter.",
+            "Add water, boil and blend.",
+            "Season and serve hot."
         ]
     },
-    "Potato and Onion Quiche": {
-        "ingredients": [
-            "potato",
-            "onion",
-            "egg",
-            "butter"
-        ],
+    "Egg Onion Masala": {
+        "ingredients": ["egg", "onion", "green chili", "turmeric powder", "salt"],
         "steps": [
-            "Saut\u00e9 onions and diced potatoes in butter until soft.",
-            "Whisk eggs and pour over the potato and onion mixture.",
-            "Bake until the eggs are set and golden."
+            "Boil eggs, chop onions and chilies.",
+            "Sauté onions and chilies, add eggs and spices.",
+            "Cook for 5 mins, serve hot."
         ]
     },
-    "Creamed Potatoes": {
-        "ingredients": [
-            "potato",
-            "butter",
-            "milk"
-        ],
+    "Potato Onion Pakora": {
+        "ingredients": ["potato", "onion", "gram flour", "red chilly powder", "salt"],
         "steps": [
-            "Boil potatoes until soft, then mash them with butter and milk.",
-            "Season with salt and pepper and serve."
-        ]
-    },
-    "Potato Tacos": {
-        "ingredients": [
-            "potato",
-            "onion",
-            "butter"
-        ],
-        "steps": [
-            "Saut\u00e9 diced potatoes and onions in butter.",
-            "Serve in tortillas with salsa and toppings."
-        ]
-    },
-    "Egg and Potato Soup": {
-        "ingredients": [
-            "egg",
-            "potato",
-            "butter",
-            "milk",
-            "onion"
-        ],
-        "steps": [
-            "Saut\u00e9 onions and potatoes in butter until golden.",
-            "Add water and simmer until the potatoes are soft.",
-            "Beat eggs and add to the soup, stirring to cook the eggs."
-        ]
-    },
-    "Egg and Onion Bagel": {
-        "ingredients": [
-            "egg",
-            "onion",
-            "butter"
-        ],
-        "steps": [
-            "Fry onions in butter until soft.",
-            "Fry an egg and place it on a toasted bagel.",
-            "Top with the saut\u00e9ed onions and serve."
-        ]
-    },
-    "Egg and Potato Casserole": {
-        "ingredients": [
-            "egg",
-            "potato",
-            "butter",
-            "milk"
-        ],
-        "steps": [
-            "Layer thinly sliced potatoes in a baking dish.",
-            "Whisk eggs and milk together, then pour over the potatoes.",
-            "Bake until golden and set."
+            "Slice potatoes and onions thinly.",
+            "Prepare batter with gram flour, salt, and chili powder.",
+            "Dip and deep fry until crispy."
         ]
     }
 }
