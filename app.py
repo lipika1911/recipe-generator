@@ -3,72 +3,71 @@ from inference_sdk import InferenceHTTPClient
 from PIL import Image
 import json
 
-# Initialize the InferenceHTTPClient with your API key and Roboflow endpoint
-CLIENT = InferenceHTTPClient(
-    api_url="https://detect.roboflow.com",
+# Initialize the InferenceHTTPClient with Roboflow serverless endpoint
+client = InferenceHTTPClient(
+    api_url="https://serverless.roboflow.com",
     api_key="wRYqcYsBKcNci74NV5KP"
 )
 
-# Load the recipes database (from the saved 'recipes_db.json' file)
+# Load your recipes database
 with open("recipes_db.json", "r") as file:
     recipes = json.load(file)
 
 # Function to generate recipe based on detected ingredients
 def generate_recipe(detected_ingredients):
-    # Remove redundant ingredients (e.g., "egg", "egg" -> "egg")
     unique_ingredients = list(set(detected_ingredients))
-    
     matching_recipes = []
     for recipe, details in recipes.items():
-        # Check if any ingredient in the recipe matches any of the unique detected ingredients
         if any(ingredient in unique_ingredients for ingredient in details["ingredients"]):
             matching_recipes.append(recipe)
     return matching_recipes, unique_ingredients
 
-# Streamlit UI elements
-st.title("Recipe Generator from Image")
-st.write("Upload an image, and I will detect the ingredients and generate a recipe!")
+# Streamlit App
+st.title("AI Recipe Generator from Image 🍳")
+st.write("Upload a food image and get recipes based on detected ingredients!")
 
-# Image upload
-image = st.file_uploader("Upload an image", type=["jpg", "jpeg", "png"])
+image = st.file_uploader("Upload your image", type=["jpg", "jpeg", "png"])
 
-# If an image is uploaded, process it
 if image:
-    # Display the uploaded image
     img = Image.open(image)
     st.image(img, caption="Uploaded Image", use_column_width=True)
-
-    # Save the image to a temporary file for inference
+    
+    # Save temporarily
     img_path = "uploaded_image.jpg"
     img.save(img_path)
 
-    # Run inference on the uploaded image
-    result = CLIENT.infer(img_path, model_id="ingredients_yolo/3")
+    # Run workflow detection using Roboflow
+    result = client.run_workflow(
+        workspace_name="lipika",
+        workflow_id="detect-and-classify",
+        images={"image": img_path},
+        use_cache=True
+    )
 
-    # Extract detected classes from the result
-    detected_classes = [prediction["class"] for prediction in result["predictions"]]
-    st.write("Detected ingredients:", detected_classes)
+    # Extract detected ingredients from result
+    detected_classes = []
+    for step in result["steps"]:
+        predictions = step.get("predictions", [])
+        for prediction in predictions:
+            detected_classes.append(prediction.get("class"))
 
-    # Generate and display recipes based on detected ingredients
+    st.write("Detected Ingredients:", detected_classes)
+
+    # Recipe generation
     recipes_found, unique_ingredients = generate_recipe(detected_classes)
 
     if recipes_found:
-        st.write("I found the following recipes based on the detected ingredients:")
-        for recipe in recipes_found:
-            st.write(f"- {recipe}")
-        
-        # Ask the user to select a recipe from the list
-        selected_recipe = st.selectbox("Choose a recipe to get the full instructions", recipes_found)
+        st.success(f"Found {len(recipes_found)} recipe(s) matching your ingredients!")
+        selected_recipe = st.selectbox("Choose a recipe", recipes_found)
 
-        # Display the selected recipe's ingredients and steps
         if selected_recipe:
             recipe_details = recipes[selected_recipe]
-            st.write(f"### {selected_recipe}")
-            st.write("**Ingredients**:")
+            st.subheader(selected_recipe)
+            st.markdown("**Ingredients:**")
             for ingredient in recipe_details["ingredients"]:
                 st.write(f"- {ingredient}")
-            st.write("**Steps**:")
+            st.markdown("**Steps:**")
             for step in recipe_details["steps"]:
                 st.write(f"- {step}")
     else:
-        st.write("Sorry, I couldn't find any recipes based on the detected ingredients.")
+        st.error("No matching recipes found for detected ingredients.")
